@@ -19,7 +19,6 @@ Homework: shows you all homeworks for all students and for you,you can search fo
 login button: Login button for teacher to login or if a for a new teacher, first register and than login
 
 ## Teacher:
-<br>
 Teacher Page contains
 <br>
 Teacher: Shows you table contains all teachers,you can delete,update,also you can add a new teacher
@@ -40,7 +39,6 @@ git clone https://github.com/SouadTorfi/Cirrus.git
 npm install
 <br>
 npm start
-<br>
 ## For Frontend side
 <br>
  cd frontend/front
