@@ -6,7 +6,7 @@ School Management System
 
 ## Description
 
-##Student:
+## Student:
 <br>
 Student Page contains
 <br>
@@ -39,6 +39,7 @@ git clone https://github.com/SouadTorfi/Cirrus.git
 npm install
 <br>
 npm start
+
 ## For Frontend side
 <br>
  cd frontend/front
