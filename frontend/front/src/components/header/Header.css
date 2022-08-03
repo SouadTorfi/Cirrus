@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap");
+
+.HeaderPage ul {
+  list-style: none;
+}
+.header_link {
+  text-decoration: none;
+}
+.HeaderPage a {
+  text-decoration: none;
+}
+.HeaderPage {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px;
+  max-width: 1070px;
+  width: 100%;
+  margin: auto;
+}
+.menu {
+  display: flex;
+}
+.menu li .header_link {
+  padding: 3px 10px;
+  margin: 0px 15px;
+  color: #3b3b3b;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+.logo {
+  font-size: 1.4rem;
+  font-weight: 10000;
+  letter-spacing: 1px;
+  color: #202020;
+}
+.logo span {
+  color: #407bff;
+}
+.headerLogin button {
+  background-color: #407bff;
+
+  border: none;
+  color: white;
+  padding: 4px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: -3px 2px;
+  cursor: pointer;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.headerLogin button:hover {
+  background-color: #6b93ec;
+}
+.headerLogin {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 25px;
+}
+.menu li .header_link:hover {
+  color: #b3cbfb;
+  transition: all ease 0.3s;
+}
+.menu-icon,
+.menu-btn {
+  display: none;
+}
+
+@media (max-width: 750px) {
+  .navigation {
+    justify-content: space-between;
+    height: 65px;
+    padding: 35px 25px;
+  }
+  .logo {
+    font-size: 1.2rem;
+  }
+  .navigation .menu {
+    display: none;
+    position: absolute;
+    top: 65px;
+    left: 0px;
+    z-index: 100;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    border-bottom: 1px solid rgba(245, 245, 245);
+  }
+  .navigation .menu li {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  .navigation .menu li .header_link {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 30px 20px;
+    border: 1px solid rgba(248, 247, 247, 0.5);
+    margin: 0px;
+  }
+  .menu-icon {
+    display: block;
+  }
+  .navigation .menu-icon {
+    cursor: pointer;
+    position: absolute;
+    right: 40px;
+    z-index: 2;
+  }
+  .navigation .menu-icon .nav-icon {
+    background-color: #141414cc;
+    display: block;
+    height: 2px;
+    width: 25px;
+    position: relative;
+    transition: background 0.2s ease-out;
+  }
+
+  .navigation .menu-icon .nav-icon::before,
+  .navigation .menu-icon .nav-icon::after {
+    background-color: #141414cc;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all ease-out 0.2s;
+  }
+  .navigation .menu-icon .nav-icon::before {
+    top: 7px;
+  }
+  .navigation .menu-icon .nav-icon::after {
+    top: -7px;
+  }
+  .navigation .menu-btn:checked ~ .menu-icon .nav-icon::before {
+    transform: rotate(-45deg);
+    top: 0px;
+  }
+  .navigation .menu-btn:checked ~ .menu-icon .nav-icon::after {
+    transform: rotate(45deg);
+    top: 0px;
+  }
+  .navigation .menu-btn:checked ~ .menu-icon .nav-icon {
+    background-color: transparent;
+  }
+  .navigation .menu-btn:checked ~ .menu {
+    display: block;
+  }
+  .headerLogin button {
+    background-color: #407bff;
+
+    margin: 4px 18px;
+  }
+}

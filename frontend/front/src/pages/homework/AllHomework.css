@@ -1,0 +1,122 @@
+.homework-container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  min-height: 100vh;
+}
+
+.homework-responsive-table li {
+  border-radius: 3px;
+  padding: 25px 30px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.homework-responsive-table .table-content {
+  background-color: #407bff;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.homework-responsive-table .homework-table-row {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+}
+.homework-responsive-table .col-1 {
+  flex-basis: 10%;
+}
+.homework-responsive-table .col-2 {
+  flex-basis: 30%;
+}
+.homework-responsive-table .col-3 {
+  flex-basis: 15%;
+}
+
+
+
+.homework-container h1 {
+  color: #6b93ec;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 7px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.homework-underline {
+  border-bottom: solid 2px #407bff;
+  margin: 1.112em auto;
+  width: 150px;
+}
+
+.update button {
+  background-color: #2d7a2d;
+  color: #fff;
+  border: none;
+  padding: 5px 18px;
+  border-radius: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.delete button {
+  background-color: #882424;
+  color: #fff;
+  margin-top: 5px;
+  border: none;
+  padding: 5px 22px;
+  border-radius: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.add-homework-btn {
+  border: none;
+  background-color: #407bff;
+  padding: 10px 25px;
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.add-homework-btn:hover {
+  background-color: #6b93ec;
+}
+@media all and (max-width: 767px) {
+  .homework-responsive-table .table-content {
+    display: none;
+  }
+  .homework-responsive-table li {
+    display: block;
+  }
+  .homework-responsive-table .col {
+    flex-basis: 100%;
+  }
+  .homework-responsive-table .col:before {
+    display: flex;
+    padding: 10px 0;
+    color: #407bff;
+    padding-right: 10px;
+    content: attr(data-label);
+    flex-basis: 50%;
+    text-align: right;
+  }
+  .homework-container h1 {
+    color: #6b93ec;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 7px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .homework-underline {
+    border-bottom: solid 2px #6b93ec;
+    margin: 0.8em auto;
+    width: 100px;
+  }
+}

@@ -1,0 +1,118 @@
+#addTeacher-container {
+  max-width: 768px;
+  margin: 60px auto;
+  position: relative;
+}
+
+#addTeacher-container form {
+  padding: 36px;
+  margin: 50px 0;
+}
+
+#addTeacher-container h1 {
+  color: #6b93ec;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 7px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.addTeacher-underline {
+  border-bottom: solid 2px #6b93ec;
+  margin: -0.312em auto;
+  width: 200px;
+}
+
+.addTeacher-telephone {
+  float: right;
+  width: 45%;
+}
+.addTeacher-email {
+  width: 100%;
+}
+
+#addTeacher-container input[type="text"],
+#addTeacher-container [type="email"] {
+  border: none;
+  border-bottom: solid 2px #6b93ec;
+  color: #3b3b3b;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0em 0 1.875em 0;
+  padding: 0 0 0.875em 0;
+  width: 100%;
+}
+
+#addTeacher-container input[type="text"]:focus,
+#addTeacher-container [type="email"]:focus {
+  outline: none;
+}
+
+.addTeacher-name {
+  float: left;
+  width: 45%;
+}
+
+.addTeacher-email input::placeholder {
+  color: #6b93ec;
+}
+.addTeacher-telephone input::placeholder {
+  color: #6b93ec;
+}
+
+.addTeacher-name input::placeholder {
+  color: #6b93ec;
+}
+
+#form_button-addTeacher {
+  background: none;
+  border: solid 2px #6b93ec;
+  color: #6b93ec;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.875em;
+  font-weight: bold;
+  outline: none;
+  padding: 20px 35px;
+  text-transform: uppercase;
+}
+
+#form_button-addTeacher:hover {
+  background: #6b93ec;
+  color: #f2f3eb;
+}
+
+
+@media screen and (max-width: 768px) {
+  #addTeacher-container {
+    margin: 20px auto;
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #addTeacher-container h1 {
+    font-size: 26px;
+  }
+
+  #form_button-addTeacher {
+    padding: 15px 25px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  #addTeacher-container h1 {
+    font-size: 18px;
+  }
+
+  .addTeacher-underline {
+    width: 130px;
+  }
+
+  #addTeacher-container input[type="text"],
+  #addTeacher-container input[type="email"] {
+    font-size: 0.875em;
+  }
+}

@@ -1,0 +1,12 @@
+.footerPage footer {
+  background: #407bff;
+  /* position: fixed;
+  bottom: 0%;
+  left: 0%;
+  width: 100%; */
+}
+
+.footerPage footer p {
+  padding: 40px 0;
+  text-align: center;
+}

@@ -1,0 +1,117 @@
+#editStudent-container {
+  max-width: 768px;
+  margin: 60px auto;
+  position: relative;
+}
+
+#editStudent-container form {
+  padding: 36px;
+  margin: 50px 0;
+}
+
+#editStudent-container h1 {
+  color: #6b93ec;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 7px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.editStudent-underline {
+  border-bottom: solid 2px #6b93ec;
+  margin: -0.312em auto;
+  width: 200px;
+}
+
+.editStudent-telephone {
+  float: right;
+  width: 45%;
+}
+.editStudent-email {
+  width: 100%;
+}
+
+#editStudent-container input[type="text"],
+#editStudent-container [type="email"] {
+  border: none;
+  border-bottom: solid 2px #6b93ec;
+  color: #3b3b3b;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0em 0 1.875em 0;
+  padding: 0 0 0.875em 0;
+  width: 100%;
+}
+
+#editStudent-container input[type="text"]:focus,
+#editStudent-container [type="email"]:focus {
+  outline: none;
+}
+
+.editStudent-name {
+  float: left;
+  width: 45%;
+}
+
+.editStudent-email input::placeholder {
+  color: #6b93ec;
+}
+.editStudent-telephone input::placeholder {
+  color: #6b93ec;
+}
+
+.editStudent-name input::placeholder {
+  color: #6b93ec;
+}
+
+#form_button-editStudent {
+  background: none;
+  border: solid 2px #6b93ec;
+  color: #6b93ec;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.875em;
+  font-weight: bold;
+  outline: none;
+  padding: 20px 35px;
+  text-transform: uppercase;
+}
+
+#form_button-editStudent:hover {
+  background: #6b93ec;
+  color: #f2f3eb;
+}
+
+@media screen and (max-width: 768px) {
+  #editStudent-container {
+    margin: 20px auto;
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #editStudent-container h1 {
+    font-size: 26px;
+  }
+
+  #form_button-editStudent {
+    padding: 15px 25px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  #editStudent-container h1 {
+    font-size: 18px;
+  }
+
+  .editStudent-underline {
+    width: 130px;
+  }
+
+  #editStudent-container input[type="text"],
+  #editStudent-container input[type="email"] {
+    font-size: 0.875em;
+  }
+}

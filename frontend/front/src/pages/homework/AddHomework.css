@@ -1,0 +1,154 @@
+#addhomework-container {
+  max-width: 768px;
+  margin: 60px auto;
+  position: relative;
+}
+
+#addhomework-container form {
+  padding: 36px;
+  margin: 50px 0;
+}
+
+#addhomework-container h1 {
+  color: #6b93ec;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 7px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.addhomework-underline {
+  border-bottom: solid 2px #6b93ec;
+  margin: -0.312em auto;
+  width: 200px;
+}
+
+.addhomework-note {
+  width: 100%;
+}
+
+#addhomework-container input[type="text"],
+#addhomework-container [type="note"],
+#addhomework-container [type="textHomework"] {
+  border: none;
+  border-bottom: solid 2px #6b93ec;
+  color: #3b3b3b;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0em 0 1.875em 0;
+  padding: 0 0 0.875em 0;
+  width: 100%;
+}
+
+#addhomework-container input[type="text"]:focus,
+#addhomework-container [type="note"]:focus {
+  outline: none;
+}
+
+.addhomework-name {
+  float: left;
+  width: 45%;
+}
+
+.addhomework-note input::placeholder {
+  color: #6b93ec;
+}
+.addhomework-telephone input::placeholder {
+  color: #6b93ec;
+}
+
+.addhomework-name input::placeholder {
+  color: #6b93ec;
+}
+.addhomework-textHomework textarea::placeholder {
+  color: #6b93ec;
+}
+.addStudent-teacher input::placeholder {
+  color: #6b93ec;
+}
+
+#form_button-addhomework {
+  background: none;
+  border: solid 2px #6b93ec;
+  color: #6b93ec;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.875em;
+  font-weight: bold;
+  outline: none;
+  padding: 20px 35px;
+  text-transform: uppercase;
+}
+
+#form_button-addhomework:hover {
+  background: #6b93ec;
+  color: #f2f3eb;
+}
+
+.addhomework-textHomework textarea {
+  line-height: 150%;
+  height: 150px;
+  resize: none;
+  width: 100%;
+}
+
+#addhomework-container textarea {
+  border: none;
+  border-bottom: solid 2px #6b93ec;
+  color: #3b3b3b;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0em 0 1.875em 0;
+  padding: 0 0 0.875em 0;
+  width: 100%;
+}
+
+#addhomework-container textarea:focus {
+  outline: none;
+}
+.select-student {
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: 17px;
+  background-color: #407bff;
+}
+
+.addStudent-teacher {
+  float: right;
+  width: 45%;
+}
+@media screen and (max-width: 768px) {
+  #addhomework-container {
+    margin: 20px auto;
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #addhomework-container h1 {
+    font-size: 26px;
+  }
+
+  #form_button-addhomework {
+    padding: 15px 25px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  #addhomework-container h1 {
+    font-size: 15px;
+  }
+
+  .addhomework-underline {
+    width: 100px;
+  }
+
+  #addhomework-container input[type="text"],
+  #addhomework-container input[type="note"],
+  #addhomework-container input[type="textHomework"] {
+    font-size: 0.875em;
+  }
+}
